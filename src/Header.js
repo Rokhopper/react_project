@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from './Pages/Home';
+import Contacts from './Pages/Contacts';
+import About from './Pages/About';
+import Blog from './Pages/Blog';
 import {
     Navbar,
     Nav,
@@ -11,6 +16,7 @@ import logo from "./Components/img.png";
 export default class Header extends Component {
     render() {
         return (
+
             <>
                 <Navbar fixed="top" collapseOnSelect expand="md" bg="dark"
                         variant="dark">
@@ -43,6 +49,14 @@ export default class Header extends Component {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<Home />}/>
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
+                        <Route path="/blog" element={<Blog/>}/>
+                    </Routes>
+                </Router>
             </>
         )
     }

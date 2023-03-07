@@ -74,6 +74,7 @@ class Blog extends Component {
                         </Card.Body>
                     </Card>
                 </Col>
+
             </Row>
         );
     }

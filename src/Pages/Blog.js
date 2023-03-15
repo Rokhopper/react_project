@@ -3,6 +3,7 @@ import {Container, Col, Row, Card, ListGroup} from "react-bootstrap";
 class Blog extends Component {
     render() {
         return (
+            <Container className="mt-5">
             <Row>
                 <Col md="9">
                     <div className="d-flex align-items-center me-5">
@@ -76,6 +77,7 @@ class Blog extends Component {
                 </Col>
 
             </Row>
+            </Container>
         );
     }
 }

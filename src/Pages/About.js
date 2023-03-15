@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import {Container} from "react-bootstrap";
 import Tab from 'react-bootstrap/Tab';
 import {Col, Nav, Row} from "react-bootstrap";
+import BaseComponent from "bootstrap/js/src/base-component";
 class About extends Component {
     render() {
         return (
-            <Container>
+            <Container className="mt-5">
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                     <Row>
                         <Col sm={3}>

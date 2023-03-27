@@ -10,7 +10,7 @@ class About extends Component {
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                     <Row>
                         <Col sm={3}>
-                            <Nav variant="pills" className="flex-column mt-2">
+                            <Nav variant="pills" className="flex-column mt-4">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Design</Nav.Link>
                                 </Nav.Item>
@@ -28,7 +28,7 @@ class About extends Component {
                                 </Nav.Item>
                             </Nav>
                         </Col>
-                        <Col sm={9}>
+                        <Col sm={9} className="mt-4">
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <img className="d-block w-100"

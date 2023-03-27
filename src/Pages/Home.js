@@ -6,7 +6,7 @@ class Home extends Component {
         return (
             <div>
                 <CarouselBoxHk/>
-                <Container>
+                <Container className="mt-5">
                     <h2 className="text-center m-4">Our team</h2>
                     <div className="row">
                         <div className="col">
